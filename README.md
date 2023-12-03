@@ -47,5 +47,5 @@ Simulate enterprise network in Cisco Packet Tracer with various devices such as 
 
 <br />
 <br />
-Drag and frop devices as seen in the diagram. Connect devices with appropriate cabling. Run command 'show cdp neighbors' to label interfaces. Label devices with hostnames: <br/>
-<img src="https://i.imgur.com/6raWWEw.png" height="80%" width="80%" />
+Drag and drop devices as seen in the diagram. Connect devices with appropriate cabling. Label interfaces: <br/>
+<img src="https://i.imgur.com/Fu9iR6x.png" height="80%" width="80%" />
