@@ -8,6 +8,8 @@ Simulate enterprise network in Cisco Packet Tracer with various devices such as 
 <br />
 <br />
 2. Distribution layer will provide aggregation of routing and VLANs to facilitate efficient network performance. Key configurations for distribution layer switches include VLANs, IP addresses, trunk ports, SVIs, OSPF, VRRP, NTP, DHCP relay, DNS, RADIUS, and Syslog. 
+<br />
+<br />
 3. Core layer will provide the high-speed backbone of the network, facilitating data transfer between distribution layer devices and ensuring efficient connectivity across the entire infrastructure. Core layer switches key configurations will include IP addresses, OSPF, NTP, DHCP relay, DNS, RADIUS, and Syslog. 
 <br />
 <br />
