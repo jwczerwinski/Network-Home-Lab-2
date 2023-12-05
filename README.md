@@ -49,3 +49,100 @@ Simulate enterprise network in Cisco Packet Tracer with various devices such as 
 <br />
 Drag and drop devices as seen in the diagram. Connect devices with appropriate cabling. Label interfaces: <br/>
 <img src="https://i.imgur.com/Fu9iR6x.png" height="80%" width="80%" />
+<h3> 1. Access Layer </h3>
+<h4>  A. PCs </h4>
+IP addresses, default gateways
+DNS and DHCP servers
+<h4> B. Access Switches </h4>
+Hostname and password
+Vlans, vlan interfaces, trunk and access ports, unused interfaces native vlans, IP addresses
+Mgmt interface
+DHCP
+NTP
+Syslog
+<h3> 2. Distribution Layer</h3>
+<h4> A. Distribution Switches</h4>
+Hostname and password
+Interfaces, Vlans, vlan interfaces, descriptions, Ip addresses, trunk ports
+OSPF
+VRRP
+NTP
+DHCP relay
+DNS
+RADIUS
+Syslog
+<h3>3. Core Layer</h3>
+<h4> A. Core Switches</h4>
+See configuration file for process
+<h3>4. Cisco ASA</h3>
+Hostname and password
+Interfaces, description, nameif, security level, ip address
+Syslog
+Default and static routes
+Objects and object groups
+ICMMp ECHO permit inside | across networks
+SSH
+OSPF
+Authentication
+Security zones
+ACLs out-to-in and in-to-out
+NTP
+RADIUS
+<h3>5. Data Center</h3>
+<h4> A. Switch</h4>
+Hostname and password
+point-to-point layer3 links
+OSPF
+access ports in VLAN50
+Etherchannel
+NTP
+Syslog trap sending
+RADIUS authentication
+<h4> B. Server</h4>
+SSH
+Services: DNS, NTP, DHCP, RADIUS, and Syslog
+<h3>6. Edge Router and ISPs</h3>
+<h4> A. Edge router</h4>
+Hostname and password
+Username and password privileged exec mode
+Interfaces, ip addresses, descriptions
+NAT / PAT, ACLs
+Static routes
+BGP
+NTP
+Syslog
+DNS
+SSH, VTY access list
+<h4> B. ISP router</h4>
+Hostname and password
+interfaces, ip addresses, descriptions
+BGP
+NAT
+DNS
+<h3>7. DMZ</h3>
+<h4> A. ASA </h4>
+Hostname and password
+Interfaces, description, nameif, security level, ip address
+AAA
+Default and static routes
+Objects and object groups
+SSH
+ACLs out-to-in and in-to-out
+NTP
+Syslog
+Traffic inspection
+Security zones
+<h4> B. Switch</h4>
+Hostname and password
+Username and password privilege exec mode and SSH, line console
+interfaces , descriptions, ip addresses
+Vlan interface, vlan name, VTP, and SVI port
+Static default route
+NTP
+DNS
+Syslog
+<h4>C. Server </h4>
+NTP
+DNS
+Web
+Syslog
