@@ -50,9 +50,9 @@ Simulate enterprise network in Cisco Packet Tracer with various devices such as 
 Drag and drop devices as seen in the diagram. Connect devices with appropriate cabling. Label interfaces: <br/>
 <img src="https://i.imgur.com/Fu9iR6x.png" height="80%" width="80%" />
 <h3> 1. Access Layer </h3>
-<h4>  A. Test PCs </h4>
-IP addresses, default gateways
-DNS and DHCP servers
+<h4>  A. PCs </h4>
+Default gateways and DNS service for all PCs. IP addresses for testing PC1 & 4. (DHCP service is later)
+<img src="https://i.imgur.com/9CYG2OR.png" height="80%" width="80%" />
 <h4> B. Access Switches </h4>
 Hostname and password
 Vlans, vlan interfaces, trunk and access ports, unused interfaces native vlans, IP addresses
