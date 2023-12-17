@@ -51,7 +51,7 @@ Drag and drop devices as seen in the diagram. Connect devices with appropriate c
 <img src="https://i.imgur.com/Fu9iR6x.png" height="80%" width="80%" />
 <h3> 1. Access Layer </h3>
 <h4>  A. PCs </h4>
-Default gateways and DNS service for all PCs. IP addresses for testing PC1 & 4. (DHCP service is later)
+Static IP addresses, default gateways and DNS server for PCs 1 & 4 for testing. (Setting up DHCP service later)
 <img src="https://i.imgur.com/9CYG2OR.png" height="80%" width="80%" />
 <h4> B. Access Switches </h4>
 Hostname and password
