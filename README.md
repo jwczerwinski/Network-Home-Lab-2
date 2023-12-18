@@ -54,9 +54,45 @@ Drag and drop devices as seen in the diagram. Connect devices with appropriate c
 Static IP addresses, default gateways and DNS server for PCs 1 & 4 for testing. (Setting up DHCP service later)
 <img src="https://i.imgur.com/9CYG2OR.png" height="80%" width="80%" />
 <h4> B. Access Switches </h4>
-Hostname and password
+Hostname, username, passwords<br />
+Switch(config)#hostname SW1<br />
+SW1(config)#enable secret password<br />
+SW1(config)#username jon secret password<br />
+<br />
 Vlans, vlan interfaces, trunk and access ports, unused interfaces native vlans, IP addresses
-Mgmt interface
+Mgmt interface. Secure unused interfaces. <br />
+SW1(config)#vlan 10<br />
+SW1(config-vlan)#vlan 11<br />
+SW1(config-vlan)#vlan 20<br />
+SW1(config-vlan)#vlan 21<br />
+SW1(config-vlan)#vlan 100<br />
+SW1(config-vlan)#vlan 999<br />
+SW1(config-vlan)#exit<br />
+<br />
+SW1(config-if)#int f0/1<br />
+SW1(config-if)#switchport trunk allowed vlan 10,11,20,21<br />
+SW1(config-if)#switchport trunk native vlan 999<br />
+<br />
+SW1(config-if)#int f0/2<br />
+SW1(config-if)#switchport trunk allowed vlan 10,11,20,21<br />
+SW1(config-if)#switchport trunk native vlan 999<br />
+<br />
+SW1(config-if)#int f0/3<br />
+SW1(config-if)#switchport trunk allowed vlan 10,11,20,21<br />
+SW1(config-if)#switchport trunk native vlan 999<br />
+<br />
+SW1(config)#int f0/4<br />
+SW1(config-if)#switchport access vlan 10<br />
+SW1(config-if)#switchport voice vlan 11<br />
+<br />
+SW1(config-if)#int f0/5<br />
+SW1(config-if)#switchport access vlan 20<br />
+SW1(config-if)#switchport voice vlan 21<br />
+<br />
+SW1(config)#int range f0/6-24, g0/1-2
+SW1(config-if-range)#switchport access vlan 100
+<br />
+<img src="https://i.imgur.com/s4hRNOT.png" height="80%" width="80%" />
 DHCP
 NTP
 Syslog
