@@ -52,7 +52,7 @@ Drag and drop devices as seen in the diagram. Connect devices with appropriate c
 <h3> 1. Access Layer </h3>
 <h4>  A. PCs </h4>
 Static IP addresses, default gateways and DNS server for PCs 1 & 4 for testing. (Setting up DHCP service later)
-<img src="https://i.imgur.com/9CYG2OR.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/9CYG2OR.png" height="80%" width="80%" /><br />
 <h4> B. Access Switches </h4>
 Hostname, username, passwords<br />
 Switch(config)#hostname SW1<br />
@@ -89,10 +89,10 @@ SW1(config-if)#int f0/5<br />
 SW1(config-if)#switchport access vlan 20<br />
 SW1(config-if)#switchport voice vlan 21<br />
 <br />
-SW1(config)#int range f0/6-24, g0/1-2
-SW1(config-if-range)#switchport access vlan 100
+SW1(config)#int range f0/6-24, g0/1-2<br />
+SW1(config-if-range)#switchport access vlan 100<br />
 <br />
-<img src="https://i.imgur.com/s4hRNOT.png" height="80%" width="80%" />
+<img src="https://i.imgur.com/s4hRNOT.png" height="80%" width="80%" /><br />
 DHCP
 NTP
 Syslog
